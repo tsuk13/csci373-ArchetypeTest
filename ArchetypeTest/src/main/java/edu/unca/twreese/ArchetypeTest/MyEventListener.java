@@ -11,13 +11,13 @@ import org.bukkit.event.player.PlayerJoinEvent;
 /*
  * This is a sample event listener
  */
-public class ArchetypeTestListener implements Listener {
-    private final ArchetypeTest plugin;
+public class MyEventListener implements Listener {
+    private final MyPlugin plugin;
 
     /*
      * This listener needs to know about the plugin which it came from
      */
-    public ArchetypeTestListener(ArchetypeTest plugin) {
+    public MyEventListener(MyPlugin plugin) {
         // Register the listener
         plugin.getServer().getPluginManager().registerEvents(this, plugin);
         

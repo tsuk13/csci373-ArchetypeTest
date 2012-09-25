@@ -5,7 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 /*
  * This is the main class of the sample plug-in
  */
-public class ArchetypeTest extends JavaPlugin {
+public class MyPlugin extends JavaPlugin {
     /*
      * This is called when your plug-in is enabled
      */
@@ -15,10 +15,10 @@ public class ArchetypeTest extends JavaPlugin {
         saveDefaultConfig();
         
         // Create the SampleListener
-        new ArchetypeTestListener(this);
+        new MyEventListener(this);
         
         // set the command executor for sample
-        this.getCommand("sample").setExecutor(new ArchetypeTestCommandExecutor(this));
+        this.getCommand("sample").setExecutor(new MyCommandExecutor(this));
     }
     
     /*

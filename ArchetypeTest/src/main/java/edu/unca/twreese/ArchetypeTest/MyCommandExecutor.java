@@ -9,13 +9,13 @@ import com.google.common.base.Joiner;
 /*
  * This is a sample CommandExectuor
  */
-public class ArchetypeTestCommandExecutor implements CommandExecutor {
-    private final ArchetypeTest plugin;
+public class MyCommandExecutor implements CommandExecutor {
+    private final MyPlugin plugin;
 
     /*
      * This command executor needs to know about its plugin from which it came from
      */
-    public ArchetypeTestCommandExecutor(ArchetypeTest plugin) {
+    public MyCommandExecutor(MyPlugin plugin) {
         this.plugin = plugin;
     }
 
